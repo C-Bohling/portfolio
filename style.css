@@ -11,9 +11,11 @@ body {
 
 main {
     margin: 0 auto 2rem;
-    max-width: 75rem;
+    max-width: 79rem;
+    padding: 0 2rem;
 }
 
+    
 h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -21,13 +23,13 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 p {
     margin-bottom: 1rem;
     text-indent: 1.5rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .flex {
@@ -59,7 +61,6 @@ header a {
 
 header li {
     margin: 0 1rem;
-    
 }
 
 header li a {
@@ -81,14 +82,40 @@ header li a:hover {
 
 #about-me {
     margin: 2rem auto;
+    align-items: center;
+}
+
+#about-me-story {
+    float:left;
+    text-align: left;
 }
 
 #about-me img {
-    height: auto;
+    width: 100%;
+    border: 2px solid rgb(247, 253, 255);
+    border-radius: 0.4rem;
+}
+
+#about-me .img-container {
+    float: right;
     width: 15rem;
-    flex-shrink: 0;
-    margin-top: 0.5rem;
-    border: 2px solid lightgray;
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+    p {
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #about-me .img-container {
+        float: none;
+        width: 70%;
+        margin: 1rem auto;
+    }
 }
 
 .expand-header{
@@ -137,6 +164,3 @@ header li a:hover {
 #contact-container h1 {
     text-align: center;
 }
-
-
-
