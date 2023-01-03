@@ -1,0 +1,142 @@
+html {
+    height:100vh;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height:100%;
+    display:grid;
+    grid-template-rows: 4rem 1fr;
+}
+
+main {
+    margin: 0 auto 2rem;
+    max-width: 75rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-indent: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Header / navbar */
+header {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.35rem;
+}
+
+header nav {
+    margin-right: 1rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header li {
+    margin: 0 1rem;
+    
+}
+
+header li a {
+    color:rgb(32, 32, 100);
+}
+
+header li a:hover {
+    font-size: 1.5rem;
+}
+
+.name {
+    margin: 0 2rem;
+    min-width: fit-content;
+}
+
+.current-page {
+    color: blue;
+}
+
+#about-me {
+    margin: 2rem auto;
+}
+
+#about-me img {
+    height: auto;
+    width: 15rem;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+    border: 2px solid lightgray;
+}
+
+.expand-header{
+    background-color: rgb(228, 224, 237);
+    height: 4rem;
+    padding: 1.25rem 2rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.chevron {
+    position: relative;
+    bottom: 0.25rem;
+    font-size: 1.5rem;
+    vertical-align: bottom;
+    font-weight: 400;
+    user-select: none;
+}
+
+.project-about {
+    display: none;
+    padding: 1.25rem 2rem;
+    border: 2px solid darkgray;
+}
+
+.platform-logo {
+    position: relative;
+    bottom: 0.125rem;
+    height: 2rem;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Contact.html */
+
+.contact {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact-container {
+    line-height: 1.5;
+}
+
+#contact-container h1 {
+    text-align: center;
+}
+
+
+
