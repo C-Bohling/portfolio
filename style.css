@@ -7,7 +7,7 @@ body {
     height:100%;
     display:grid;
     grid-template-rows: 4rem 1fr;
-    overflow-y: overlay;
+    /* overflow-y: overlay; */
 }
 
 main {
@@ -44,7 +44,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.35rem;
 }
 
 header nav {
@@ -58,6 +57,7 @@ header ul {
 
 header a {
     text-decoration: none;
+    font-size: 1.35rem;
 }
 
 header li {
@@ -104,7 +104,8 @@ header li a:hover {
 }
 
 @media only screen and (max-width: 650px) {
-    p {
+    p,
+    a {
         font-size: 1.125rem;
     }
 
@@ -112,32 +113,45 @@ header li a:hover {
         text-align: center;
     }
 
+
+
     #about-me .img-container {
         float: none;
         width: 70%;
         margin: 1rem auto;
     }
+
+    /* #about-me img {
+        width: 100%;
+    } */
 }
 
 .expand-header {
     background-color: rgb(228, 224, 237);
-    height: 4rem;
-    padding: 1.25rem 2rem;
+    /* height: 3.5rem; */
+    padding: 0.75rem 2rem;
     margin-top: 1.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border: none;
     width: 100%;
     text-align: left;
+}
+
+@media only screen and (max-width:650px) {
+    .expand-header {
+        padding: 1.5rem 2rem;
+
+    }
 }
 
 .expand-header::after {
     color: black;
     content: '\00002B';
     float: right;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .active {
@@ -186,16 +200,19 @@ header li a:hover {
     text-align: center;
 }
 
-footer {
-    width: 79rem;
-    padding: 0 2rem;
+.footer-container {
+    max-width: 79rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 footer p {
-    display: inline;
+    display: inline-block;
+    text-indent: 0px;
+    width:50%;
 }
 
 .align-right {
     float: right;
+    text-align: right;
 }
