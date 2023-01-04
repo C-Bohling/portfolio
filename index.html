@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Caleb Bohling</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -63,43 +63,45 @@
             <h2>Projects</h2>
             <div id="projects">
                 <div class="project" id="encoder">
-                    <div class="flex expand-header">
-                        <h3>Encoder</h3>
-                        <span class="chevron">></span>
-                    </div>
-                    
+                    <button type="button" class="expand-header">Encoder</button>
                     <div class="project-about">
-                        <p>
-                            This simple web app can encode and decode your 
-                            secret messages! (not actually secure) My friend
-                            and I built this one afternoon for the fun of it.
-                        </p>
-                        <a href="https://github.com/C-Bohling/encoder" target="_blank">
-                            <img src="media/GitHub-Mark.png" alt="Github" class="platform-logo">
-                            Encoder - Github
-                        </a>
+                        <div class="project-about-container">
+                            <p>
+                                This simple web app can encode and decode your 
+                                secret messages! (not actually secure) My friend
+                                and I built this one afternoon for the fun of it.
+                            </p>
+                            <a href="https://github.com/C-Bohling/encoder" target="_blank">
+                                <img src="media/GitHub-Mark.png" alt="Github" class="platform-logo">
+                                Encoder - Github
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="project" id="random-statement">
-                    <div class="flex expand-header">
-                        <h3>Random Statement Generator</h3>
-                        <span class="chevron">></span>
-                    </div>
+                    <button type="button" class="expand-header">Random Statement Generator</button>
                     <div class="project-about">
-                        <p>
-                            This simple web app generates a random sentence at
-                            the click of the mouse. This was the first project
-                            I ever did that used JavaScript with the document
-                            object.
-                        </p>
-                        <a href="https://github.com/C-Bohling/random-statement-generator" target="_blank">
-                            <img src="media/GitHub-Mark.png" alt="Github" class="platform-logo">
-                            Random Statement Generator - Github
-                        </a>
+                        <div class="project-about-container">
+                            <p>
+                                This simple web app generates a random sentence at
+                                the click of the mouse. This was the first project
+                                I ever did that used JavaScript with the document
+                                object.
+                            </p>
+                            <a href="https://github.com/C-Bohling/random-statement-generator" target="_blank">
+                                <img src="media/GitHub-Mark.png" alt="Github" class="platform-logo">
+                                Random Statement Generator - Github
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>© 2023</p>
+        <p class="align-right">S.D.G.</p>
+    </footer>
 </body>
 </html>

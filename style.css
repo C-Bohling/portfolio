@@ -7,6 +7,7 @@ body {
     height:100%;
     display:grid;
     grid-template-rows: 4rem 1fr;
+    overflow-y: overlay;
 }
 
 main {
@@ -118,27 +119,47 @@ header li a:hover {
     }
 }
 
-.expand-header{
+.expand-header {
     background-color: rgb(228, 224, 237);
     height: 4rem;
     padding: 1.25rem 2rem;
-    justify-content: space-between;
     margin-top: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+    text-align: left;
 }
 
-.chevron {
-    position: relative;
-    bottom: 0.25rem;
-    font-size: 1.5rem;
-    vertical-align: bottom;
-    font-weight: 400;
-    user-select: none;
+.expand-header::after {
+    color: black;
+    content: '\00002B';
+    float: right;
+    vertical-align: text-bottom;
+}
+
+.active {
+    background-color: darkgray;
+    transition: 0.2s ease-in-out;
+}
+
+.active::after {
+    content: '\002212';
+    transition: 0.2s ease-in-out;
 }
 
 .project-about {
-    display: none;
-    padding: 1.25rem 2rem;
-    border: 2px solid darkgray;
+    max-height: 0;
+    overflow: hidden;
+    /* display: none; */
+    transition: 0.2s ease-in-out;
+}
+
+.project-about-container {
+    padding: 1.5rem 2rem;
+    border: darkgray solid 0.125rem;
 }
 
 .platform-logo {
@@ -163,4 +184,18 @@ header li a:hover {
 
 #contact-container h1 {
     text-align: center;
+}
+
+footer {
+    width: 79rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+footer p {
+    display: inline;
+}
+
+.align-right {
+    float: right;
 }
